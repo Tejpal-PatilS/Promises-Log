@@ -1,0 +1,54 @@
+package com.promiseLog.qa.TestBase;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.ie.InternetExplorerDriver;
+
+public class TestBase {
+
+	public static WebDriver driver;
+	public static Properties prop;
+	
+	public TestBase()
+	{
+		try {
+			prop=new Properties();
+			FileInputStream ip=new FileInputStream("../Demo_PromiseLog/src/main/java/com/promiseLog/qa/config/config.properties");
+		    prop.load(ip);
+		}catch(FileNotFoundException e)
+		{
+			e.printStackTrace();
+		}catch(IOException e)
+		{
+			e.printStackTrace();
+		}
+	}
+		
+		public static void initialization()
+		{
+			String browser_name=prop.getProperty("browser");
+			if(browser_name.equals("chrome"))
+			{
+				System.setProperty("webdriver.chrome.driver", "../Demo_PromiseLog/exe/chromedriver.exe");
+				driver=new ChromeDriver();
+			}
+			else if(browser_name.equals("IE"))
+			{
+				System.setProperty("webdriver.ie.driver", "/SEDA_Hague_Clean_City/exe/chromedriver.exe");
+				driver=new InternetExplorerDriver();
+			}
+			
+			driver.manage().window().maximize();
+			driver.manage().deleteAllCookies();
+			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			
+			driver.get(prop.getProperty("url"));
+			
+		}
+}

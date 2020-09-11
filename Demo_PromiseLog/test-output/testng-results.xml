@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-09-10T22:16:51 IST" name="Default suite" finished-at="2020-09-10T22:17:13 IST" duration-ms="21679">
+    <groups>
+    </groups>
+    <test started-at="2020-09-10T22:16:51 IST" name="Default test" finished-at="2020-09-10T22:17:13 IST" duration-ms="21679">
+      <class name="com.promiseLog.qa.TestCase.Promise_Log_TestCases">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.promiseLog.qa.TestCase.Promise_Log_TestCases@1d082e88]" started-at="2020-09-10T22:16:51 IST" name="setup" finished-at="2020-09-10T22:17:05 IST" duration-ms="14145" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="clickonLoginbtnTest()[pri:1, instance:com.promiseLog.qa.TestCase.Promise_Log_TestCases@1d082e88]" started-at="2020-09-10T22:17:05 IST" name="clickonLoginbtnTest" finished-at="2020-09-10T22:17:06 IST" duration-ms="389" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickonLoginbtnTest -->
+        <test-method signature="loginToSite()[pri:2, instance:com.promiseLog.qa.TestCase.Promise_Log_TestCases@1d082e88]" started-at="2020-09-10T22:17:06 IST" name="loginToSite" finished-at="2020-09-10T22:17:07 IST" duration-ms="1386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginToSite -->
+        <test-method signature="addPromiseTest()[pri:3, instance:com.promiseLog.qa.TestCase.Promise_Log_TestCases@1d082e88]" started-at="2020-09-10T22:17:07 IST" name="addPromiseTest" finished-at="2020-09-10T22:17:10 IST" duration-ms="2514" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addPromiseTest -->
+        <test-method signature="searchPromiseAddTest()[pri:4, instance:com.promiseLog.qa.TestCase.Promise_Log_TestCases@1d082e88]" started-at="2020-09-10T22:17:10 IST" name="searchPromiseAddTest" finished-at="2020-09-10T22:17:11 IST" duration-ms="1264" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchPromiseAddTest -->
+        <test-method signature="clickOnLogoutTest()[pri:5, instance:com.promiseLog.qa.TestCase.Promise_Log_TestCases@1d082e88]" started-at="2020-09-10T22:17:11 IST" name="clickOnLogoutTest" finished-at="2020-09-10T22:17:12 IST" duration-ms="734" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnLogoutTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.promiseLog.qa.TestCase.Promise_Log_TestCases@1d082e88]" started-at="2020-09-10T22:17:12 IST" name="tearDown" finished-at="2020-09-10T22:17:13 IST" duration-ms="1151" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.promiseLog.qa.TestCase.Promise_Log_TestCases -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
